@@ -1,5 +1,5 @@
 //
-//  Location.swift
+//  File.swift
 //  SwiftUIMapApp
 //
 //  Created by Roman Romanov on 27.12.2023.
