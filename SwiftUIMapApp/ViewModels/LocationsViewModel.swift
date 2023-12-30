@@ -13,15 +13,20 @@ class LocationsViewModel: ObservableObject {
     
     // All loaded location
     @Published var locations: [Location]
+    
     // Current location on map
     @Published var mapLocation: Location {
         didSet {
             updateMapRegion(location: mapLocation)
         }
     }
-
+    
+    // Current region on map
     @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion())
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    
+    // Show list of locations
+    @Published var showLocationList: Bool = false
     
     init() {
         let locations = LocationsDataService.locations
@@ -36,6 +41,19 @@ class LocationsViewModel: ObservableObject {
             cameraPosition = .region(MKCoordinateRegion(
                 center: location.coordinates,
                 span: mapSpan))
+        }
+    }
+    
+    func toggleLocationsList() {
+        withAnimation(.easeInOut) {
+            showLocationList.toggle()
+        }
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            showLocationList = false
         }
     }
     
