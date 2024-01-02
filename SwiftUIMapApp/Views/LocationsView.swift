@@ -19,6 +19,7 @@ struct LocationsView: View {
             VStack(spacing: 0) {
                 header
                     .padding()
+                    .tint(.black)
                 Spacer()
                 locationPreviewStack
             }

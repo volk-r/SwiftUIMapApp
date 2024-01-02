@@ -51,6 +51,7 @@ extension LocationsListView {
                     .font(.subheadline)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
+            .tint(.black)
         }
     }
 }
