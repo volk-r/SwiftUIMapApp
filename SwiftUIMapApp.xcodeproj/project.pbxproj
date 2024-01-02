@@ -17,6 +17,7 @@
 		3C14771F2B3DED300035FC32 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14771E2B3DED300035FC32 /* LocationsViewModel.swift */; };
 		3C1477212B4040930035FC32 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1477202B4040930035FC32 /* LocationsListView.swift */; };
 		3C1477232B4303140035FC32 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1477222B4303140035FC32 /* LocationPreviewView.swift */; };
+		3CD7BA7F2B447E3A002706C0 /* LocationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7BA7E2B447E3A002706C0 /* LocationAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3C14771E2B3DED300035FC32 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		3C1477202B4040930035FC32 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		3C1477222B4303140035FC32 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		3CD7BA7E2B447E3A002706C0 /* LocationAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				3C14771C2B3DE76D0035FC32 /* LocationsView.swift */,
 				3C1477202B4040930035FC32 /* LocationsListView.swift */,
 				3C1477222B4303140035FC32 /* LocationPreviewView.swift */,
+				3CD7BA7E2B447E3A002706C0 /* LocationAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				3C14771B2B3C9DEF0035FC32 /* Location.swift in Sources */,
 				3C1477212B4040930035FC32 /* LocationsListView.swift in Sources */,
+				3CD7BA7F2B447E3A002706C0 /* LocationAnnotationView.swift in Sources */,
 				3C1477232B4303140035FC32 /* LocationPreviewView.swift in Sources */,
 				3C14771F2B3DED300035FC32 /* LocationsViewModel.swift in Sources */,
 				3C1477192B3C99D90035FC32 /* LocationsDataService.swift in Sources */,
