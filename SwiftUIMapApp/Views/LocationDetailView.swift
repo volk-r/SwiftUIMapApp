@@ -48,13 +48,11 @@ extension LocationDetailView {
     private var imageSection: some View {
         TabView {
             ForEach(location.imageNames, id: \.self) { imageName in
-                GeometryReader { geometry in
-                    Image(imageName)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geometry.size.width)
-                        .clipped()
-                }
+                Image(imageName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil: UIScreen.main.fixedCoordinateSpace.bounds.width)
+                    .clipped()
             }
         }
         .frame(height: 500)
